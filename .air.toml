@@ -1,0 +1,10 @@
+# Configurations de Air
+root = "."
+temp_dir = "tmp"
+[build]
+  cmd = "go build -o ./tmp/main -buildvcs=false ."
+  bin = "tmp/main"
+  include_ext = ["go"]
+  exclude_dir = ["vendor", "tmp"]
+[log]
+  level = "debug"
